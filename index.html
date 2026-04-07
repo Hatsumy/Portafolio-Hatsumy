@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Hatsumy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<header>
+    <h1>Iara Hatsumy Valverde Briceño</h1>
+    <p>Estudiante de Ingeniería Informática</p>
+</header>
+
+<section class="perfil">
+    <h2>Perfil Profesional</h2>
+    <p>
+        Estudiante de Ingeniería Informática de 8° ciclo con experiencia en atención al cliente,
+        gestión de inventarios y soporte administrativo. Manejo de Excel básico y herramientas digitales.
+        Destaco por mi organización, responsabilidad y capacidad de adaptación.
+    </p>
+</section>
+
+<section>
+    <h2>Experiencia Laboral</h2>
+
+    <div class="card">
+        <h3>TopiTop - Asistente de Almacén</h3>
+        <span>2025</span>
+        <ul>
+            <li>Gestión y control de inventario</li>
+            <li>Clasificación de productos</li>
+            <li>Apoyo en auditorías</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Universidad Nacional José Faustino Sánchez Carrión</h3>
+        <span>Apoyo Administrativo - 2025</span>
+        <ul>
+            <li>Registro y organización de datos</li>
+            <li>Atención a postulantes</li>
+            <li>Verificación de documentos</li>
+        </ul>
+    </div>
+
+</section>
+
+<section>
+    <h2>Proyectos</h2>    
+
+    <div class="card">
+        <h3>Portafolio Web Personal</h3>
+        <p>Primer proyecto desarrollado con HTML y CSS aplicando diseño responsive.</p>
+        
+        <div class="buttons">
+        <a href="https://www.linkedin.com/in/iara-hatsumy-valverde-brice%C3%B1o-bb5b2927a/" target="_blank" class="btn">
+            Ver Proyecto
+        </a>        
+        </div>
+        
+    </div>
+
+</section>
+
+<section class="grid">
+    <div>
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Microsoft Excel</li>
+            <li>Gestión de datos</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Habilidades Blandas</h2>
+        <ul>
+            <li>Trabajo en equipo</li>
+            <li>Comunicación</li>
+            <li>Organización</li>
+        </ul>
+    </div>
+</section>
+
+<section class="grid">
+    <div>
+        <h2>Idiomas</h2>
+        <ul>
+            <li>Español: Nativo</li>
+            <li>Inglés: Básico</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Contacto</h2>
+        <p>📧 hatsumyvb@gmail.com</p>
+        <p>📱 +51 903 224 014</p>
+
+        <br>
+
+        <div class="buttons">
+        <a href="https://www.linkedin.com/in/iara-hatsumy-valverde-brice%C3%B1o-bb5b2927a/" target="_blank" class="btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+        </a>        
+        </div>
+        <br>
+        <div class="buttons">
+        <a href="https://github.com/Hatsumy" target="_blank" class="btn">
+        <i class="fab fa-github"></i> GitHub
+        </a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Hatsumy Valverde</p>
+</footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    const trigger = window.innerHeight * 0.85;
+
+    sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+
+        if (top < trigger) {
+            section.classList.add("show");
+        }
+    });
+});
+</script>
+
+</body>
+</html>
