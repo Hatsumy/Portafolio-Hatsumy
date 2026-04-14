@@ -88,6 +88,37 @@ body {
     color: var(--secondary-pink);
 }
 
+/* Etiquetas de tecnología dentro de la card */
+.tech-tags {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-tags span {
+    background: var(--accent-soft);
+    color: var(--secondary-pink);
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid var(--primary-pink);
+}
+
+/* Contenedor de botones para que queden alineados */
+.card-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; /* Empuja los botones al fondo de la card */
+}
+
+.card-buttons .btn {
+    padding: 8px 15px;
+    font-size: 14px;
+}
+
 /* SECCIONES */
 section {
     width: 85%;
@@ -143,6 +174,71 @@ h2 {
 
 .card:hover img {
     transform: scale(1.05);
+}
+
+/* SECCIÓN CERTIFICADOS */
+.cert-grid {
+    display: grid;
+    /* Ajustado para que quepan 2 o 3 por fila dependiendo de la pantalla */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.cert-card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s;
+}
+
+.cert-card:hover {
+    border-color: var(--primary-pink);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(246, 196, 223, 0.2);
+}
+
+.cert-card i {
+    font-size: 28px;
+    color: var(--secondary-pink);
+    min-width: 40px;
+    text-align: center;
+}
+
+.cert-card h3 {
+    font-size: 16px;
+    color: var(--dark-text);
+    margin-bottom: 2px;
+}
+
+.cert-card p {
+    font-size: 13px;
+    color: #636e72;
+    margin-bottom: 8px;
+}
+
+.cert-link {
+    text-decoration: none;
+    color: var(--secondary-pink);
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cert-link:hover {
+    text-decoration: underline;
+}
+
+/* Ajuste móvil */
+@media (max-width: 768px) {
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* SKILLS */
